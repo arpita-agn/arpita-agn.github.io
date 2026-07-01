@@ -98,9 +98,15 @@ li {
   white-space: nowrap;
 }
 
-.topbar-nav a:hover {
+.topbar-nav a:hover,
+.topbar-nav a.active {
   background: var(--accent-light);
   color: var(--accent);
+}
+
+.topbar-name {
+  text-decoration: none;
+  color: var(--text);
 }
 
 .menu-toggle {

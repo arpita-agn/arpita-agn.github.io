@@ -1,0 +1,37 @@
+<aside class="sidebar">
+  <div class="profile-card">
+    <div class="profile-img-wrapper">
+      <img src="{{ site.baseurl }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}" class="profile-img" />
+    </div>
+    <h1 class="profile-name">{{ site.author.name }}</h1>
+    <p class="profile-title">{{ site.author.bio }}</p>
+    <div class="profile-meta">
+      {% if site.author.employer %}
+        <span><i class="fas fa-building"></i> {{ site.author.employer }}</span>
+      {% endif %}
+      {% if site.author.education %}
+        <span><i class="fas fa-graduation-cap"></i> {{ site.author.education }}</span>
+      {% endif %}
+      {% if site.author.location %}
+        <span><i class="fas fa-map-marker-alt"></i> {{ site.author.location }}</span>
+      {% endif %}
+    </div>
+    <div class="social-links">
+      {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+      {% endif %}
+      {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if site.author.linkedin %}
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      {% endif %}
+      {% if site.author.leetcode %}
+        <a href="https://leetcode.com/u/{{ site.author.leetcode }}" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
+      {% endif %}
+      {% if site.author.codeforces %}
+        <a href="https://codeforces.com/profile/{{ site.author.codeforces }}" target="_blank" title="Codeforces"><i class="fas fa-trophy"></i></a>
+      {% endif %}
+    </div>
+  </div>
+</aside>

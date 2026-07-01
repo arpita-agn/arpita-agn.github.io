@@ -1,0 +1,70 @@
+# Site Settings
+locale: "en-US"
+title: "Arpita Ghosh"
+title_separator: "-"
+name: &name "Arpita Ghosh"
+description: &description "Software Engineer | Quantum Computing Researcher"
+url: https://arpita-agn.github.io
+baseurl: ""
+repository: "arpita-agn/arpita-agn.github.io"
+
+# Site Author
+author:
+  name: "Arpita Ghosh"
+  avatar: "profile.jpg"
+  bio: "Software Engineer | Quantum Computing Researcher"
+  employer: "Dynamic Solution Innovators"
+  education: "SUST, Bangladesh"
+  location: "Sylhet, Bangladesh"
+  email: "ghosharpita423@gmail.com"
+  github: "agn008"
+  linkedin: ""
+  leetcode: "agn008"
+  codeforces: "2017331008"
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .sass-cache
+  - .jekyll-cache
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CLAUDE.md
+  - Dockerfile
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author_profile: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
