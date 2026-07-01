@@ -1,44 +1,34 @@
 ---
+layout: archive
+title: "Skills"
 permalink: /skills/
-title: Skills
 author_profile: true
 ---
 
-<div class="skills-grid">
-  <div class="skill-category">
-    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-    <div class="skill-tags">
-      <span>C++</span>
-      <span>Java</span>
-      <span>Python</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h3><i class="fas fa-cogs"></i> Technologies &amp; Frameworks</h3>
-    <div class="skill-tags">
-      <span>Jakarta EE</span>
-      <span>JSF</span>
-      <span>JasperReports</span>
-      <span>Spring Framework</span>
-      <span>React</span>
-      <span>Node.js</span>
-      <span>Solidity</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h3><i class="fas fa-brain"></i> AI / ML</h3>
-    <div class="skill-tags">
-      <span>RAG</span>
-      <span>LLM</span>
-      <span>LangChain</span>
-      <span>FastAPI</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h3><i class="fas fa-language"></i> Languages</h3>
-    <div class="skill-tags">
-      <span>Bangla (Native)</span>
-      <span>English</span>
-    </div>
-  </div>
-</div>
+My primary focus is enterprise web development using Java/Jakarta EE, with experience across AI/ML systems and full-stack development.
+
+---
+
+### ⚙️ Programming Languages
+
+C++ Java Python
+
+### 🛠️ Technologies & Frameworks
+
+Jakarta EE JSF JasperReports Spring Framework React Node.js Solidity
+
+### 🤖 AI / ML
+
+RAG LLM LangChain FastAPI
+
+### 🌐 Languages
+
+Bangla (Native) English
+
+---
+
+### 🧩 Problem Solving
+
+**500+ problems solved** across competitive programming platforms with strong foundations in algorithms, data structures, and mathematical reasoning.
+
+- **Profiles:** [LeetCode](https://leetcode.com/u/agn008) | [Codeforces](https://codeforces.com/profile/2017331008)

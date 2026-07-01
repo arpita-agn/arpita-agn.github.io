@@ -1,67 +1,241 @@
 # Site Settings
-locale: "en-US"
-title: "Arpita Ghosh"
-title_separator: "-"
-name: &name "Arpita Ghosh"
-description: &description "Software Engineer | Quantum Computing Researcher"
-url: https://arpita-agn.github.io
-baseurl: ""
-repository: "arpita-agn/arpita-agn.github.io"
+locale                   : "en-US"
+title                    : "Arpita Ghosh"
+title_separator          : "-"
+name                     : &name "Arpita Ghosh"
+description              : &description "Software Engineer | Quantum Computing Researcher"
+url                      : https://arpita-agn.github.io
+baseurl                  : ""
+repository               : "arpita-agn/arpita-agn.github.io"
 
 # Site Author
 author:
-  name: "Arpita Ghosh"
-  avatar: "profile.jpg"
-  bio: "Software Engineer | Quantum Computing Researcher"
-  employer: "Dynamic Solution Innovators"
-  education: "SUST, Bangladesh"
-  location: "Sylhet, Bangladesh"
-  email: "ghosharpita423@gmail.com"
-  github: "agn008"
-  linkedin: ""
-  leetcode: "agn008"
-  codeforces: "2017331008"
+  avatar           : "profile.jpg"
+  name             : "Arpita Ghosh"
+  pronouns         :
+  bio              : "Software Engineer | Quantum Computing Researcher"
+  location         : "Sylhet, Bangladesh"
+  employer         : "Dynamic Solution Innovators"
+  uri              :
+  email            : "ghosharpita423@gmail.com"
+
+  # Academic websites
+  arxiv            :
+  googlescholar    :
+  impactstory      :
+  orcid            :
+  semantic         :
+  pubmed           :
+  researchgate     :
+  scopus           :
+
+  # Repositories and software development
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "agn008"
+  kaggle           :
+  stackoverflow    :
+
+  # Social media
+  bluesky          :
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
+
+  # Competitive programming
+  leetcode         : "agn008"
+  codeforces       : "2017331008"
+
+# Site Settings
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+comments:
+  provider               :
+  disqus:
+    shortname            :
+  discourse:
+    server               :
+  facebook:
+    appid                :
+    num_posts            :
+    colorscheme          :
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "main"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
+atom_feed:
+  hide                   : false
+  path                   :
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+social:
+  type                   :
+  name                   :
+  links:
+
+# Analytics
+analytics:
+  provider               : false
 
 # Reading Files
 include:
+  - .htaccess
   - _pages
+  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
   - .sass-cache
-  - .jekyll-cache
-  - node_modules
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CLAUDE.md
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
   - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+  - CLAUDE.md
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Defaults
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: posts
     values:
-      layout: "page"
+      layout: single
       author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Etc/UTC
 
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # HTML Compression
 compress_html:
