@@ -2,6 +2,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-vendor/
+# Only ignore root vendor (bundler), not _sass/vendor
+/vendor/
 .bundle/
 Gemfile.lock
