@@ -1,15 +1,18 @@
 main:
-  - title: "About"
-    url: /
   - title: "Experience"
     url: /experience/
+
   - title: "Education"
     url: /education/
+
   - title: "Research"
     url: /research/
+
   - title: "Projects"
     url: /projects/
+
   - title: "Skills"
     url: /skills/
+
   - title: "Achievements"
     url: /achievements/
